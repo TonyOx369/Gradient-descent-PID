@@ -1,0 +1,7 @@
+<launch>
+    <node name="cool" pkg="pid_tuning" type="tuning_pub.py" output="screen" />
+    
+    <node name="cost_subscriber" pkg="pid_tuning" type="tuning_sub.py" output="screen" />
+    
+    <node name="turtlesim_node" pkg="turtlesim" type="turtlesim_node" output="screen"/>
+</launch>
